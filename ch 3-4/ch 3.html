@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:blue;
+        }
+        ul{
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/test.jpg", alt="홈으로 가기" usemap="#favorite">
+    <map name="favorite">
+        <area shpae="rect" coords="10,10,150,100" href="https://www.naver.com" target="_blank">
+        <area shape="rect" coords="160, 10, 300, 100" href="https://www.google.com" target="_blank">
+    </map>
+    <br>
+    <a href="https://www.naver.com" target="_top"> 
+        테스트중입니다.
+        <br>
+        <img src="images/test.jpg" width="100", height="100">
+    </a>
+
+    <form action="search.php" method="post">
+        <input type="text" title="검색" placeholder="테스트" autofocus>
+        <input type="submit" value="검색">
+        <br>
+        <label for="id이름">레이블</label>
+        <input id="id이름" type="text">
+        <br>
+        <label type="text"> 레이블<input> </label>
+        <br>
+        <label>아이디(6자 이상)<input type="button"></label>
+        <br>
+        <input type="password">
+        <br>
+        <input type="number" min="1" max="5" step="2" required>
+        <br>
+        <input type="range" min="0" max="10" value="5">
+        <br>
+        <input type="text" value="123" readonly>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="button" value="새 탭 열기" onclick="window.open()">
+    </form>
+
+    <form>
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm" checked>문법</li>
+            <li><input type="checkbox" value="wr">작문</li>
+            <li><input type="checkbox" value="rd">독해</li>
+        </ul>
+        <h3>수강 과목(다수 선택 가능-레이블)</h3>
+        <ul>
+            <li><label>문법<input type="checkbox" name="subject" value="grm"></label></li>
+            <li><label><input type="checkbox" name="subject" value="wr">작문</label></li>
+            <li><label><input type="checkbox" name="subject" value="rd">독해</label></li>
+        </ul>
+    </form>
+    <select>
+        <optgroup label="이공계">
+            <option value="archi">건축공학과</option> 
+            <option value="physics">물리학과</option>
+            <option value="chem">화학과</option>
+        </optgroup>
+        <optgroup label="문과">
+            <option value="art">미술학과</option>
+        </optgroup>
+    </select>
+
+    <br>
+    데이터 리스트
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <option value="basic" label="기본"></option>
+        <option value="inop" label="옵안문">옵션 안쪽 문구</option>
+        <option value="nola"></option>
+    </datalist>
+    <br>
+    텍스트 아리아(최대 글자 3자)
+    <textarea name="intro" cols="60" rows="2" maxlength="3"></textarea>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>설문 요소 그룹으로 묶기</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="mail">메일 주소</label>
+                    <input type="text" id="mail">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <ul id="menu">
+        <li><a href="#content1">메뉴1</a></li>
+        <li><a href="#content2">메뉴2</a></li>
+        <li><a href="#content3">메뉴3</a></li>
+    </ul>
+
+    <h2 id="content1">내용1</h2>
+    <p>웹 문서가 너무 길 경우, 앵커를 쓰는겁니다.<br><br><br><br><br><br><br><br><br></p>
+    <h2 id="content2">내용2</h2>
+    <p>웹 문서가 너무 길 경우, 앵커를 쓰는겁니다.<br><br><br><br><br><br><br><br><br></p>
+    <h2 id="content3">내용3</h2>
+    <p>웹 문서가 너무 길 경우, 앵커를 쓰는겁니다.<br><br><br><br><br><br><br><br><br></p>
+    <p><a href="#menu">[메뉴로]</a></p>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 프로필</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        @font-face {
+            font-family: BM-font;
+            src: url(css/BMDOHYEON_ttf\ \(1\).ttf);
+        }
+        section{
+            width:500px;
+            padding:15px;
+            border: 5px solid gray;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        p{
+            margin-left: 10px;
+            font-size: 12px;
+            font-family: 'Nanum Gothic';
+            font-weight: 900;
+            font-variant: small-caps;
+        }
+        .boldtext{
+            font-weight: bold;
+        }
+        .bluetext:hover{
+            color: blue;
+            transform: rotate(15deg);
+        }
+        h2.bluetext{
+            color: lightblue;
+            text-align: center;
+        }
+        #container{
+            padding: 15px;
+        }
+        #BM-font-test{
+            font-size: 12pt;
+        }
+        .sumf{
+            font: bold italic 12px 'Nanum Gothic';
+        }
+        .lineheight{
+            line-height: 70%;
+        }
+        .overflow{
+            width: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .overflow:hover{
+            overflow: visible;
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="container">
+        <section>
+            <h2>Who am I?</h2> 
+            <h2 class="bluetext">Who am I?</h2> 
+            <p>프런트엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다.<br>
+            현재 제주의 한 <span class="bluetext"> 파란 글자</span>시골 마을에서 코딩 중입니다.</p>
+        </section>
+        <p class="bluetext boldtext"> 파란 글자 p</p>
+    </div>
+    <p id="BM-font-test">배달의 민족 도현체</p>
+    <h3 class="sumf">여러 폰트 짬뽕 + rgb</h3>
+    <h4> color code </h4>
+    <p class="deleted_text"> 삭선표시</p>
+    <p class="transform"> Capitalize</p>
+    <p class="whspace">테스트 중이에요    쭉</p>
+    <p class="lineheight"> line-height함수 테스트 중입니다.<br> 테스트 중이에요</p>
+    <p class="overflow">넘치는 글자 text-overflow테스트</p>
+
+    <img src="images/dot.png">
+    
+
+</body>
+</html>

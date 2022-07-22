@@ -1,0 +1,28 @@
+h2{
+    color:blue;
+}
+h3{
+    color: rgb(0, 200, 0);
+    text-decoration: overline;
+}
+h4{
+    color: #ff01f0;
+    text-decoration: underline;
+}
+.deleted_text{
+    text-decoration: line-through;
+}
+.transform{
+    font-variant: normal;
+    text-transform: uppercase;
+    text-shadow: 2px -1px 2px orange, 3px -2px 3px black;
+}
+.whspace{
+    white-space: pre;
+    letter-spacing: 0.2em;
+    word-spacing: 2px;
+}
+p{
+    font-size:0.9em;
+    line-height: 2.0;
+}

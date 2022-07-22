@@ -1,0 +1,15 @@
+.frontside{
+    font-weight: 700;
+    font-size: larger;
+    color: #ad3000;
+}
+ul{
+    list-style-type: none;
+    line-height: 2em;
+}
+h1{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+}
