@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch 8</title>
+    <style>
+        nav ul li{
+            display: inline-block;
+            margin: 20px;
+            background: aqua;
+        }
+        nav {
+				width:100%;
+				height:60px;
+				background-color: #069;
+
+		}
+        .border-t{
+            display: inline-block;
+            border-width: 5px;
+            border-style: dotted;
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            background-clip: padding-box;
+        }
+        .border-t2{
+            display: inline-block;
+            border-width: 5px;
+            border-top-width: 0px;
+            border-style: dashed;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            background-clip: padding-box;
+        }
+        .border-t3{
+            display: inline-block;
+            border-width: 3px 6px 9px 12px;
+            border-color: blue red black pink;
+            border-style: dashed;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            background-clip: padding-box;
+        }
+        .border-t4{
+            display: inline-block;
+            border-top: 3px blue dashed;
+            border-bottom: 6px red solid;
+            width: 50px;
+            height: 50px;
+            background-color: cadetblue;
+            background-clip: padding-box;
+        }
+        .border-t5{
+            display: inline-block;
+            border: 5px solid;
+            border-radius: 10%;
+            border-top-right-radius: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(146, 160, 95);
+            background-clip: padding-box;
+        }
+        .border-t6{
+            display: inline-block;
+            border: 5px solid;
+            border-radius: 5px 30px 15px 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #999;
+            background-clip: padding-box;
+        }
+        .border-t7{
+            display: inline-block;
+            border: 5px solid;
+            border-top-right-radius: 20px 50px;
+            box-shadow: 20px 5px 5px 5px gray, 30px 8px 5px blue; 
+            /*<수평거리-필수> <수직거리-필수> <흐림정도> <번짐정도> <색상> <inset(안쪽)>*/
+            width: 50px;
+            height: 50px;
+            background-color: rgb(180, 180, 180);
+            background-clip: padding-box;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+        <h2>애완견 종류</h2>
+    </nav>
+    <div class="border-t">  </div>
+    <div class="border-t2"></div>
+    <div class="border-t3"></div>
+    <div class="border-t4"></div>
+    <div class="border-t5"></div>
+    <div class="border-t6"></div>
+    <div class="border-t7"></div>
+    
+</body>
+</html>
